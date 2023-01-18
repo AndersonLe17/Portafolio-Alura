@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farsan&display=swap");
+body {
+  background: #FFFFFF;
+}
+body::-webkit-scrollbar {
+  background: white;
+  border: 1px solid rgba(61, 61, 61, 0.25);
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(53, 72, 84, 0.6470588235);
+  border-radius: 5px;
+}
+
+.text-bg-blue-dark {
+  color: white;
+  background: #455E6E;
+}
+
+.btn-blue-dark {
+  color: white;
+  background: #354854;
+}
+.btn-blue-dark:hover {
+  background: #455E6E;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+}
+.navbar .navbar-brand {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 2.9em;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-collapse {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.075rem;
+}
+.navbar.fixed {
+  padding: 0;
+  background: rgba(110, 111, 112, 0.0980392157);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: #25323B;
+  text-shadow: 1px 1px 2px #25323B;
+}
+
+.banner {
+  height: 100vh;
+  padding-top: 4rem;
+}
+.banner .banner-info h1 {
+  font-family: "Caveat", cursive;
+  font-size: 4em;
+  font-weight: 600;
+}
+.banner .banner-info span {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.banner .banner-info p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 1.175em;
+}
+.banner .banner-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.banner .banner-info ul .feed-links {
+  float: left;
+  background: white;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 0.5rem;
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+  transition: 0.5s;
+}
+.banner .banner-info ul .feed-links i {
+  position: absolute;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+.banner .banner-info ul .feed-links span {
+  cursor: pointer;
+  font-size: 1.475em;
+  position: absolute;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.banner .banner-info ul .feed-links:hover {
+  width: 150px;
+}
+.banner .banner-info ul .feed-links:hover i {
+  color: rgba(255, 255, 255, 0);
+  transition-delay: 0s;
+}
+.banner .banner-info ul .feed-links:hover span {
+  transform: scale(1);
+}
+.banner .banner-info ul li:first-child {
+  margin-left: 0;
+}
+.banner .banner-img img {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+  background: white;
+}
+
+.sector {
+  padding: 5rem 0rem 3rem;
+}
+.sector .sector-title {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.sector .sector-title h2 {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.sector .sector-title h2 i {
+  font-size: 0.5em;
+  background: black;
+  color: #FFFFFF;
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 0.5rem;
+}
+.sector .sector-body {
+  display: flex;
+}
+
+.about-me .about-me-body {
+  justify-content: space-around;
+}
+.about-me .about-me-body .about-me-profile {
+  background: #FFFFFF;
+  box-shadow: 1px 5px 7px 2px rgba(0, 0, 0, 0.2470588235);
+  border-radius: 7.5%;
+  padding: 1rem;
+  width: 215px;
+  height: 200px;
+}
+.about-me .about-me-body .about-me-img {
+  margin-bottom: 0.45rem;
+}
+.about-me .about-me-body .about-me-img img {
+  width: 6.75rem;
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+}
+.about-me .about-me-body .about-me-grade {
+  font-family: "Roboto", sans-serif;
+}
+.about-me .about-me-body .about-me-grade span {
+  font-weight: 600;
+}
+.about-me .about-me-body .about-me-grade p {
+  color: #557487;
+  font-weight: 400;
+}
+.about-me .about-me-body .about-me-desc {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+.about-me .about-me-body .about-me-desc p {
+  font-size: 1.195em;
+  text-align: justify;
+}
+
+.skills .skills-body {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills .skills-item {
+  padding: 0.5rem 1.25rem;
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+  display: flex;
+  width: 16rem;
+}
+.skills .skills-item .skills-icon {
+  padding: 0.75rem 0.5rem 0.75rem 0;
+}
+.skills .skills-item .skills-icon img {
+  width: 50px;
+}
+.skills .skills-item .skills-desc {
+  font-family: "Ubuntu Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills .skills-item .skills-desc h3 {
+  font-weight: bold;
+  font-size: 1.35rem;
+  margin: 0;
+}
+.skills .skills-item .skills-desc p {
+  font-weight: 500;
+  color: #658AA1;
+  margin: 0;
+}
+
+.hobbies .hobbies-body {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hobbies .hobbies-item {
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+}
+.hobbies .hobbies-item .hobbies-icon lord-icon {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.hobbies .hobbies-item .hobbies-desc {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+.hobbies .hobbies-item .hobbies-desc h4 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.training .training-body {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.training .training-item {
+  width: 20rem;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+}
+.training .training-item .training-icon .img-back {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+}
+.training .training-item .training-icon .img-logo {
+  margin-top: -45px;
+  width: 85px;
+  height: 85px;
+  border: 5px solid white;
+}
+.training .training-item .training-desc {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+.training .training-item .training-desc span {
+  color: #658AA1;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.training .training-item .training-desc a {
+  display: block;
+  text-decoration: none;
+  color: #25323B;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.projects .projects-body {
+  flex-direction: column;
+}
+.projects .projects-item {
+  display: flex;
+  height: 15rem;
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+}
+.projects .projects-item .projects-icon img {
+  height: 100%;
+}
+.projects .projects-item .projects-desc {
+  font-family: "Ubuntu Condensed", sans-serif;
+  padding: 0 1.25rem;
+}
+.projects .projects-item .projects-desc h4 {
+  font-size: 1.55em;
+  font-weight: 600;
+}
+.projects .projects-item .projects-desc p {
+  margin-bottom: 0.5rem;
+}
+
+.contact .contact-body {
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-body .border.border-1.rounded-4.p-4 {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-body h2 {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contact .contact-body h2 i {
+  font-size: 0.5em;
+  background: black;
+  color: #FFFFFF;
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 0.5rem;
+}
+.contact .contact-form {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+.contact .contact-form input:focus, .contact .contact-form textarea:focus {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2470588235);
+  border-color: #3D3D3D;
+}
+.contact .contact-form textarea {
+  height: 5rem !important;
+}
+
+footer {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+@media (max-width: 1199px) {
+  .banner .banner-info h1 {
+    font-size: 3.5em;
+  }
+  .banner .banner-info span {
+    font-size: 1.5em;
+  }
+  .banner .banner-info p {
+    font-size: 1.075em;
+  }
+  .about-me .about-me-body .about-me-desc p {
+    font-size: 1.065em;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .navbar-collapse {
+    background: rgba(110, 111, 112, 0.4980392157);
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 5.5rem;
+  }
+  .navbar.fixed .navbar-collapse {
+    top: 5rem;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: white;
+    transition: 0.35s ease-in;
+  }
+  .navbar-nav .nav-item .nav-link.active {
+    background: rgba(61, 61, 61, 0.6509803922);
+    color: #FFFFFF;
+  }
+  .banner .banner-info {
+    order: 2;
+    text-align: center;
+  }
+  .banner .banner-info ul {
+    display: flex;
+    justify-content: center;
+  }
+  .banner .banner-img {
+    order: 1;
+  }
+  .sector .sector-title {
+    padding-bottom: 1.75rem;
+  }
+  .sector .sector-title h2 {
+    font-size: 2.25em;
+  }
+  .about-me .about-me-body .about-me-profile {
+    align-self: center;
+    margin-bottom: 1.75rem;
+  }
+  .about-me .about-me-body .about-me-desc {
+    align-self: center;
+  }
+  .about-me .about-me-body .about-me-desc p {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .navbar .navbar-collapse {
+    width: 50%;
+  }
+  .banner .banner-info h1 {
+    font-size: 2.75em;
+  }
+  .banner .banner-info span {
+    font-size: 1.375em;
+  }
+  .projects .projects-item {
+    flex-direction: column;
+    height: auto;
+  }
+  .projects .projects-item .projects-icon {
+    padding-top: 1rem;
+  }
+  .projects .projects-item .projects-icon img {
+    width: 100%;
+    height: auto;
+  }
+  .projects .projects-item .projects-desc {
+    padding: 0;
+  }
+}
+@media (max-width: 575px) {
+  .navbar .navbar-brand {
+    font-size: 2.25em;
+  }
+  .navbar .navbar-collapse {
+    width: 100%;
+    top: 4.5rem;
+  }
+  .navbar.fixed .navbar-collapse {
+    top: 4rem;
+  }
+  .sector .sector-title h2 {
+    font-size: 2.15em;
+  }
+  .about-me .about-me-body .about-me-profile {
+    margin-bottom: 0.75rem;
+  }
+  .about-me .about-me-body .about-me-desc p {
+    margin: 0;
+  }
+  .skills .skills-item {
+    flex-direction: column;
+    text-align: center;
+    width: 8.5rem;
+  }
+  .skills .skills-item .skills-icon {
+    padding: 0.75rem 0.5rem;
+  }
+  .skills .skills-item .skills-desc p {
+    display: none;
+  }
+  .hobbies .hobbies-item {
+    padding: 0.5rem 0.75rem;
+  }
+  .hobbies .hobbies-item .hobbies-icon lord-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+@media (max-width: 327px) {
+  .skills .skills-item {
+    width: 4.25rem;
+    padding: 0.75rem;
+  }
+  .skills .skills-item .skills-icon {
+    padding: 0;
+  }
+  .skills .skills-item .skills-icon img {
+    width: auto;
+  }
+  .skills .skills-item .skills-desc {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
